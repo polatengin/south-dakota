@@ -39,6 +39,8 @@ jobs:
         retention-days: 30
 
     - name: Publish test results
-      uses: actions/upload-test-report@v1
+      uses: EnricoMi/publish-unit-test-result-action@v2
+      if: ${{ !cancelled() }}
       with:
-        report: playwright-report/results.xml
+        files: |
+          playwright-report/**/*.xml
