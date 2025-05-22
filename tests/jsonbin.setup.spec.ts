@@ -17,7 +17,7 @@ test("login and save session", async ({ page }) => {
 
   const keyItem = page.locator('h3:has-text("X-Master-Key")').locator('xpath=following-sibling::div[contains(@class, "api-key-block")]').locator("p");
   await expect(keyItem).toBeVisible();
-  await page.waitForTimeout(5000);
+  await page.waitForTimeout(10000);
   const key = await keyItem.textContent();
   await expect(key).not.toBeNull();
 
