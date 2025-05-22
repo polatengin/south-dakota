@@ -15,7 +15,7 @@ This repository demonstrates how to use [Playwright](https://playwright.dev/) to
 tests/
   jsonbin.setup.spec.ts     # Logs in and saves the API key from JSONBin
   jsonbin.spec.ts           # Uses the API key to test JSONBin APIs
-  playwrightdemo.spec.ts    # Example UI tests for Playwright.dev and TodoMVC
+  playwrightdemo.spec.ts    # Example UI tests for playwright.dev and TodoMVC
 playwright-state/.auth/     # Stores the API key after login
 ```
 
